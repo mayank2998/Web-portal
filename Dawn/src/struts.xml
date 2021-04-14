@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+	"http://struts.apache.org/dtds/struts-2.5.dtd">
+	
+<struts>
+		
+		<include file="Fee.xml"></include>	
+		
+		<package name="default" extends="struts-default">
+			<action name="login" class="com.mayank.UserDetails" method="doPost">
+			<result name="success">/welcome.jsp</result>
+			<result name="error">/error.jsp</result>
+			</action>
+		</package>
+		
+		<package name="register" extends="struts-default">
+			<action name="register" class="com.mayank.UserDetails" method="Registration">
+			<result name="success">/login.jsp</result>
+			</action>
+		</package>
+		
+		<package name="Log-off" extends="struts-default">
+			<action name="Log-off" class="com.mayank.UserDetails" method="logout">
+			<result name="success">/login.jsp</result>
+			</action>
+		</package>
+
+</struts>

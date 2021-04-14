@@ -1,0 +1,46 @@
+@charset "ISO-8859-1";
+
+body{
+	background-image: url("1.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow: hidden;
+}
+*{
+	box-sizing: border-box;
+}
+
+
+
+.container{
+	/*background-image: url("1.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	overflow: hidden;*/
+	margin: 20px;
+  width: 300px;
+  padding: 16px;
+  background-color: #224580;
+  position:absolute;
+	right:35%;
+	top:25%;
+}
+
+.fields{
+	display:block;
+	padding: 15px;
+	width:100%;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+.button{
+	background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
